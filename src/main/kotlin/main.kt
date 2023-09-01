@@ -8,8 +8,9 @@ fun main() {
 
     val wordsFile: File = File("words.txt")
     val dataList = wordsFile.readLines()
+    val sizeDataList = dataList.size - 1
 
-    for (i in 0..2) {
+    for (i in 0..sizeDataList) {
         println(dataList[i])
     }
 }
